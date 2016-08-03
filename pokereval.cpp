@@ -114,6 +114,7 @@ Value PokerHand::EvaluateHand() {
 
 	auto strDiff = 1;
 	auto strRank = -1;
+	auto index = 0;
 	for (auto& card : hand) {
 		if (isFlush && card.suit != firstsuit) {
 			isFlush = false;
@@ -125,8 +126,8 @@ Value PokerHand::EvaluateHand() {
 			}
 			else {
 				strDiff = (int)card.rank - strRank;
-
-				if (strDiff != 1) {
+				// special case for A2345 where A is last card
+				if (strDiff != 1 && card.rank != Rank::Ace && index != 4) {
 					isStraight = false;
 				}
 				else {
@@ -134,6 +135,7 @@ Value PokerHand::EvaluateHand() {
 				}
 			}
 		}
+		index++;
 		incced = false;
 		for (auto i = 0; i < (int)ranklist.size(); i++) {
 
