@@ -1,0 +1,12 @@
+6S2H7DTH5C -- High card Ten Hearts
+THTC2SAC3H -- One pair tens
+7S9C6H6C9S -- two pairs 6 and 9
+9DKDKHKS8S -- trips Kings
+2D4C3H6S5H -- Straight 2-6
+4S3HAC2D5S -- Straight (Ace low) Ace to 5
+KCQHJDAHTS -- Straight (Ace High) Ten to Ace
+2D9D3D6D5D -- Diamond flush
+7S9H9S7C9C -- Full house 9's over 7's.
+9DKDKHKSKC -- Four Kings
+2D4D3D6D5D -- Straight flush 2-6 Diamondsa
+JCQCKCACTC -- Royal Flush in Clubs
